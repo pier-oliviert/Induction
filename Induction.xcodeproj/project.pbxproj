@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8202FBD14D0C2DC00950BAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8202F8D14D0C2DC00950BAF /* AppDelegate.m */; };
+		F8202FC014D0C2DC00950BAF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F8202F9314D0C2DC00950BAF /* Credits.rtf */; };
+		F8202FC114D0C2DC00950BAF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8202F9514D0C2DC00950BAF /* InfoPlist.strings */; };
+		F8202FC214D0C2DC00950BAF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8202F9714D0C2DC00950BAF /* MainMenu.xib */; };
+		F8202FC514D0C2DC00950BAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8202F9D14D0C2DC00950BAF /* main.m */; };
+		F8202FD214D0C2DC00950BAF /* DateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8202FBC14D0C2DC00950BAF /* DateCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F820300B14D20FF600950BAF /* DBConnectionConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F820300914D20FF600950BAF /* DBConnectionConfigurationViewController.m */; };
+		F820300C14D20FF600950BAF /* DBConnectionConfigurationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F820300A14D20FF600950BAF /* DBConnectionConfigurationView.xib */; };
+		F820301014D217C800950BAF /* ExploreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F820300E14D217C700950BAF /* ExploreTableViewController.m */; };
+		F820301114D217C800950BAF /* ExploreTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F820300F14D217C800950BAF /* ExploreTableView.xib */; };
+		F820301514D21BEA00950BAF /* DBDatabaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F820301314D21BEA00950BAF /* DBDatabaseViewController.m */; };
+		F820301614D21BEA00950BAF /* DBDatabaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F820301414D21BEA00950BAF /* DBDatabaseView.xib */; };
+		F820301914D2218200950BAF /* DBConnectionWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F820301814D2218100950BAF /* DBConnectionWindowController.m */; };
+		F820301B14D2235100950BAF /* DBConnectionWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F820301A14D2235100950BAF /* DBConnectionWindow.xib */; };
+		F852DCEE14D35D7E00C029C8 /* QueryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F852DCEC14D35D7E00C029C8 /* QueryViewController.m */; };
+		F852DCEF14D35D7E00C029C8 /* QueryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F852DCED14D35D7E00C029C8 /* QueryView.xib */; };
+		F852DCF314D35E4E00C029C8 /* VisualizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F852DCF114D35E4E00C029C8 /* VisualizeViewController.m */; };
+		F852DCF414D35E4E00C029C8 /* VisualizeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F852DCF214D35E4E00C029C8 /* VisualizeView.xib */; };
+		F852DCF614D3609A00C029C8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F852DCF514D3609A00C029C8 /* WebKit.framework */; };
+		F854FB3F14ECAB44009AEDAB /* DBResultSetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F854FB3E14ECAB44009AEDAB /* DBResultSetView.xib */; };
+		F8595FB814C34BB100FD15BE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8595FB714C34BB100FD15BE /* Cocoa.framework */; };
+		F8662EEE14EC8E5B00F0520B /* DBResultSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8662EED14EC8E5B00F0520B /* DBResultSetViewController.m */; };
+		F873FC5014D7B9E9002C0ADC /* HTML in Resources */ = {isa = PBXBuildFile; fileRef = F873FC4F14D7B9E9002C0ADC /* HTML */; };
+		F888F57E14DB40990094B805 /* SQLSyntaxHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = F888F57D14DB40990094B805 /* SQLSyntaxHighlighter.m */; };
+		F8A2C41C14F5CFC10093682A /* DBPaginator.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A2C41B14F5CFC10093682A /* DBPaginator.m */; };
+		F8C9D03914F301BB005BE0B4 /* RedisAdapter.bundle in Copy Database Adapters */ = {isa = PBXBuildFile; fileRef = F884AD3F14F3017E00AEC751 /* RedisAdapter.bundle */; };
+		F8C9D03A14F301C3005BE0B4 /* PostgreSQLAdapter.bundle in Copy Database Adapters */ = {isa = PBXBuildFile; fileRef = F884AD3914F3017800AEC751 /* PostgreSQLAdapter.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F884AD3814F3017800AEC751 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F884AD3114F3017800AEC751 /* PostgreSQLAdapter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F806D62014F2DDF300CE7DB6;
+			remoteInfo = PostgreSQLAdapter;
+		};
+		F884AD3E14F3017E00AEC751 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F884AD3A14F3017E00AEC751 /* RedisAdapter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8804AB714F301050072CFA5;
+			remoteInfo = RedisAdapter;
+		};
+		F8C9D03514F301AA005BE0B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F884AD3114F3017800AEC751 /* PostgreSQLAdapter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F806D61F14F2DDF300CE7DB6;
+			remoteInfo = PostgreSQLAdapter;
+		};
+		F8C9D03714F301AA005BE0B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F884AD3A14F3017E00AEC751 /* RedisAdapter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8804AB614F301050072CFA5;
+			remoteInfo = RedisAdapter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F806D64314F2DE2500CE7DB6 /* Copy Database Adapters */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = Adapters;
+			dstSubfolderSpec = 13;
+			files = (
+				F8C9D03A14F301C3005BE0B4 /* PostgreSQLAdapter.bundle in Copy Database Adapters */,
+				F8C9D03914F301BB005BE0B4 /* RedisAdapter.bundle in Copy Database Adapters */,
+			);
+			name = "Copy Database Adapters";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F8202F8C14D0C2DC00950BAF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F8202F8D14D0C2DC00950BAF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F8202F9414D0C2DC00950BAF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F8202F9614D0C2DC00950BAF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F8202F9814D0C2DC00950BAF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F8202F9B14D0C2DC00950BAF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8202F9C14D0C2DC00950BAF /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		F8202F9D14D0C2DC00950BAF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F8202FBB14D0C2DC00950BAF /* DateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateCell.h; sourceTree = "<group>"; };
+		F8202FBC14D0C2DC00950BAF /* DateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateCell.m; sourceTree = "<group>"; };
+		F820300814D20FF600950BAF /* DBConnectionConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBConnectionConfigurationViewController.h; sourceTree = "<group>"; };
+		F820300914D20FF600950BAF /* DBConnectionConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBConnectionConfigurationViewController.m; sourceTree = "<group>"; };
+		F820300A14D20FF600950BAF /* DBConnectionConfigurationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DBConnectionConfigurationView.xib; sourceTree = "<group>"; };
+		F820300D14D217C700950BAF /* ExploreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreTableViewController.h; sourceTree = "<group>"; };
+		F820300E14D217C700950BAF /* ExploreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreTableViewController.m; sourceTree = "<group>"; };
+		F820300F14D217C800950BAF /* ExploreTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExploreTableView.xib; sourceTree = "<group>"; };
+		F820301214D21BE900950BAF /* DBDatabaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBDatabaseViewController.h; sourceTree = "<group>"; };
+		F820301314D21BEA00950BAF /* DBDatabaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBDatabaseViewController.m; sourceTree = "<group>"; };
+		F820301414D21BEA00950BAF /* DBDatabaseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DBDatabaseView.xib; sourceTree = "<group>"; };
+		F820301714D2218100950BAF /* DBConnectionWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBConnectionWindowController.h; sourceTree = "<group>"; };
+		F820301814D2218100950BAF /* DBConnectionWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBConnectionWindowController.m; sourceTree = "<group>"; };
+		F820301A14D2235100950BAF /* DBConnectionWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DBConnectionWindow.xib; path = ../DBConnectionWindow.xib; sourceTree = "<group>"; };
+		F852DCEB14D35D7E00C029C8 /* QueryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryViewController.h; sourceTree = "<group>"; };
+		F852DCEC14D35D7E00C029C8 /* QueryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryViewController.m; sourceTree = "<group>"; };
+		F852DCED14D35D7E00C029C8 /* QueryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QueryView.xib; sourceTree = "<group>"; };
+		F852DCF014D35E4E00C029C8 /* VisualizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisualizeViewController.h; sourceTree = "<group>"; };
+		F852DCF114D35E4E00C029C8 /* VisualizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisualizeViewController.m; sourceTree = "<group>"; };
+		F852DCF214D35E4E00C029C8 /* VisualizeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisualizeView.xib; sourceTree = "<group>"; };
+		F852DCF514D3609A00C029C8 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F854FB3E14ECAB44009AEDAB /* DBResultSetView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DBResultSetView.xib; sourceTree = "<group>"; };
+		F8595FB314C34BB100FD15BE /* Induction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Induction.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8595FB714C34BB100FD15BE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F8595FBA14C34BB100FD15BE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F8595FBB14C34BB100FD15BE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F8595FBC14C34BB100FD15BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F8662EEC14EC8E5B00F0520B /* DBResultSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBResultSetViewController.h; sourceTree = "<group>"; };
+		F8662EED14EC8E5B00F0520B /* DBResultSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBResultSetViewController.m; sourceTree = "<group>"; };
+		F873FC4F14D7B9E9002C0ADC /* HTML */ = {isa = PBXFileReference; lastKnownFileType = folder; name = HTML; path = Induction/Resources/HTML; sourceTree = "<group>"; };
+		F884AD3114F3017800AEC751 /* PostgreSQLAdapter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PostgreSQLAdapter.xcodeproj; path = Adapters/PostgreSQLAdapter/PostgreSQLAdapter.xcodeproj; sourceTree = "<group>"; };
+		F884AD3A14F3017E00AEC751 /* RedisAdapter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RedisAdapter.xcodeproj; path = Adapters/RedisAdapter/RedisAdapter.xcodeproj; sourceTree = "<group>"; };
+		F888F57C14DB40990094B805 /* SQLSyntaxHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLSyntaxHighlighter.h; sourceTree = "<group>"; };
+		F888F57D14DB40990094B805 /* SQLSyntaxHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLSyntaxHighlighter.m; sourceTree = "<group>"; };
+		F8A2C41A14F5CFC10093682A /* DBPaginator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DBPaginator.h; path = Induction/Helpers/DBPaginator.h; sourceTree = SOURCE_ROOT; };
+		F8A2C41B14F5CFC10093682A /* DBPaginator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBPaginator.m; path = Induction/Helpers/DBPaginator.m; sourceTree = SOURCE_ROOT; };
+		F8A4827814EC880300EF7050 /* DBAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAdapter.h; sourceTree = "<group>"; };
+		F8A4827A14EC8ADB00EF7050 /* SQLAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLAdapter.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8595FB014C34BB100FD15BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F852DCF614D3609A00C029C8 /* WebKit.framework in Frameworks */,
+				F8595FB814C34BB100FD15BE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8202F8B14D0C2DC00950BAF /* Induction */ = {
+			isa = PBXGroup;
+			children = (
+				F8202F8C14D0C2DC00950BAF /* AppDelegate.h */,
+				F8202F8D14D0C2DC00950BAF /* AppDelegate.m */,
+				F8202F9714D0C2DC00950BAF /* MainMenu.xib */,
+				F8202F9E14D0C2DC00950BAF /* Models */,
+				F8202FBA14D0C2DC00950BAF /* Views */,
+				F8202F8E14D0C2DC00950BAF /* Controllers */,
+				F8A2C41D14F5CFC70093682A /* Helpers */,
+				F8202FD314D0C2E300950BAF /* Supporting Files */,
+			);
+			path = Induction;
+			sourceTree = "<group>";
+		};
+		F8202F8E14D0C2DC00950BAF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F888F57C14DB40990094B805 /* SQLSyntaxHighlighter.h */,
+				F888F57D14DB40990094B805 /* SQLSyntaxHighlighter.m */,
+				F8662EEC14EC8E5B00F0520B /* DBResultSetViewController.h */,
+				F8662EED14EC8E5B00F0520B /* DBResultSetViewController.m */,
+				F854FB3E14ECAB44009AEDAB /* DBResultSetView.xib */,
+				F842904F14F30F1500B1CDFB /* Connection */,
+				F842905014F30F1F00B1CDFB /* Database */,
+				F842905114F30F2700B1CDFB /* Explore */,
+				F842905214F30F2F00B1CDFB /* Query */,
+				F842905314F30F3900B1CDFB /* Visualize */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F8202F9E14D0C2DC00950BAF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F8A4827814EC880300EF7050 /* DBAdapter.h */,
+				F8A4827A14EC8ADB00EF7050 /* SQLAdapter.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F8202FBA14D0C2DC00950BAF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8202FBB14D0C2DC00950BAF /* DateCell.h */,
+				F8202FBC14D0C2DC00950BAF /* DateCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F8202FD314D0C2E300950BAF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8202F9B14D0C2DC00950BAF /* Info.plist */,
+				F8202F9C14D0C2DC00950BAF /* Prefix.pch */,
+				F8202F9D14D0C2DC00950BAF /* main.m */,
+				F8202F9514D0C2DC00950BAF /* InfoPlist.strings */,
+				F8202F9314D0C2DC00950BAF /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F842904F14F30F1500B1CDFB /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				F820301714D2218100950BAF /* DBConnectionWindowController.h */,
+				F820301814D2218100950BAF /* DBConnectionWindowController.m */,
+				F820301A14D2235100950BAF /* DBConnectionWindow.xib */,
+				F820300814D20FF600950BAF /* DBConnectionConfigurationViewController.h */,
+				F820300914D20FF600950BAF /* DBConnectionConfigurationViewController.m */,
+				F820300A14D20FF600950BAF /* DBConnectionConfigurationView.xib */,
+			);
+			name = Connection;
+			sourceTree = "<group>";
+		};
+		F842905014F30F1F00B1CDFB /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				F820301214D21BE900950BAF /* DBDatabaseViewController.h */,
+				F820301314D21BEA00950BAF /* DBDatabaseViewController.m */,
+				F820301414D21BEA00950BAF /* DBDatabaseView.xib */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		F842905114F30F2700B1CDFB /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				F820300D14D217C700950BAF /* ExploreTableViewController.h */,
+				F820300E14D217C700950BAF /* ExploreTableViewController.m */,
+				F820300F14D217C800950BAF /* ExploreTableView.xib */,
+			);
+			name = Explore;
+			sourceTree = "<group>";
+		};
+		F842905214F30F2F00B1CDFB /* Query */ = {
+			isa = PBXGroup;
+			children = (
+				F852DCEB14D35D7E00C029C8 /* QueryViewController.h */,
+				F852DCEC14D35D7E00C029C8 /* QueryViewController.m */,
+				F852DCED14D35D7E00C029C8 /* QueryView.xib */,
+			);
+			name = Query;
+			sourceTree = "<group>";
+		};
+		F842905314F30F3900B1CDFB /* Visualize */ = {
+			isa = PBXGroup;
+			children = (
+				F852DCF014D35E4E00C029C8 /* VisualizeViewController.h */,
+				F852DCF114D35E4E00C029C8 /* VisualizeViewController.m */,
+				F852DCF214D35E4E00C029C8 /* VisualizeView.xib */,
+			);
+			name = Visualize;
+			sourceTree = "<group>";
+		};
+		F8595FA814C34BB100FD15BE = {
+			isa = PBXGroup;
+			children = (
+				F8202F8B14D0C2DC00950BAF /* Induction */,
+				F8595FB614C34BB100FD15BE /* Frameworks */,
+				F8595FB414C34BB100FD15BE /* Products */,
+				F873FC4F14D7B9E9002C0ADC /* HTML */,
+				F884AD3114F3017800AEC751 /* PostgreSQLAdapter.xcodeproj */,
+				F884AD3A14F3017E00AEC751 /* RedisAdapter.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		F8595FB414C34BB100FD15BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8595FB314C34BB100FD15BE /* Induction.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8595FB614C34BB100FD15BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F852DCF514D3609A00C029C8 /* WebKit.framework */,
+				F8595FB714C34BB100FD15BE /* Cocoa.framework */,
+				F8595FB914C34BB100FD15BE /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8595FB914C34BB100FD15BE /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8595FBA14C34BB100FD15BE /* AppKit.framework */,
+				F8595FBB14C34BB100FD15BE /* CoreData.framework */,
+				F8595FBC14C34BB100FD15BE /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F884AD3214F3017800AEC751 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F884AD3914F3017800AEC751 /* PostgreSQLAdapter.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F884AD3B14F3017E00AEC751 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F884AD3F14F3017E00AEC751 /* RedisAdapter.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8A2C41D14F5CFC70093682A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F8A2C41A14F5CFC10093682A /* DBPaginator.h */,
+				F8A2C41B14F5CFC10093682A /* DBPaginator.m */,
+			);
+			name = Helpers;
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8595FB214C34BB100FD15BE /* Induction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8595FD114C34BB100FD15BE /* Build configuration list for PBXNativeTarget "Induction" */;
+			buildPhases = (
+				F8595FAF14C34BB100FD15BE /* Sources */,
+				F8595FB014C34BB100FD15BE /* Frameworks */,
+				F8595FB114C34BB100FD15BE /* Resources */,
+				F806D64314F2DE2500CE7DB6 /* Copy Database Adapters */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8C9D03614F301AA005BE0B4 /* PBXTargetDependency */,
+				F8C9D03814F301AA005BE0B4 /* PBXTargetDependency */,
+			);
+			name = Induction;
+			productName = Induction;
+			productReference = F8595FB314C34BB100FD15BE /* Induction.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8595FAA14C34BB100FD15BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = F8595FAD14C34BB100FD15BE /* Build configuration list for PBXProject "Induction" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F8595FA814C34BB100FD15BE;
+			productRefGroup = F8595FB414C34BB100FD15BE /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F884AD3214F3017800AEC751 /* Products */;
+					ProjectRef = F884AD3114F3017800AEC751 /* PostgreSQLAdapter.xcodeproj */;
+				},
+				{
+					ProductGroup = F884AD3B14F3017E00AEC751 /* Products */;
+					ProjectRef = F884AD3A14F3017E00AEC751 /* RedisAdapter.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				F8595FB214C34BB100FD15BE /* Induction */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F884AD3914F3017800AEC751 /* PostgreSQLAdapter.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PostgreSQLAdapter.bundle;
+			remoteRef = F884AD3814F3017800AEC751 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F884AD3F14F3017E00AEC751 /* RedisAdapter.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RedisAdapter.bundle;
+			remoteRef = F884AD3E14F3017E00AEC751 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8595FB114C34BB100FD15BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8202FC014D0C2DC00950BAF /* Credits.rtf in Resources */,
+				F8202FC114D0C2DC00950BAF /* InfoPlist.strings in Resources */,
+				F8202FC214D0C2DC00950BAF /* MainMenu.xib in Resources */,
+				F820300C14D20FF600950BAF /* DBConnectionConfigurationView.xib in Resources */,
+				F820301114D217C800950BAF /* ExploreTableView.xib in Resources */,
+				F820301614D21BEA00950BAF /* DBDatabaseView.xib in Resources */,
+				F820301B14D2235100950BAF /* DBConnectionWindow.xib in Resources */,
+				F852DCEF14D35D7E00C029C8 /* QueryView.xib in Resources */,
+				F852DCF414D35E4E00C029C8 /* VisualizeView.xib in Resources */,
+				F873FC5014D7B9E9002C0ADC /* HTML in Resources */,
+				F854FB3F14ECAB44009AEDAB /* DBResultSetView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8595FAF14C34BB100FD15BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8202FC514D0C2DC00950BAF /* main.m in Sources */,
+				F8202FBD14D0C2DC00950BAF /* AppDelegate.m in Sources */,
+				F8202FD214D0C2DC00950BAF /* DateCell.m in Sources */,
+				F820300B14D20FF600950BAF /* DBConnectionConfigurationViewController.m in Sources */,
+				F820301014D217C800950BAF /* ExploreTableViewController.m in Sources */,
+				F820301514D21BEA00950BAF /* DBDatabaseViewController.m in Sources */,
+				F820301914D2218200950BAF /* DBConnectionWindowController.m in Sources */,
+				F852DCEE14D35D7E00C029C8 /* QueryViewController.m in Sources */,
+				F852DCF314D35E4E00C029C8 /* VisualizeViewController.m in Sources */,
+				F888F57E14DB40990094B805 /* SQLSyntaxHighlighter.m in Sources */,
+				F8662EEE14EC8E5B00F0520B /* DBResultSetViewController.m in Sources */,
+				F8A2C41C14F5CFC10093682A /* DBPaginator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8C9D03614F301AA005BE0B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PostgreSQLAdapter;
+			targetProxy = F8C9D03514F301AA005BE0B4 /* PBXContainerItemProxy */;
+		};
+		F8C9D03814F301AA005BE0B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RedisAdapter;
+			targetProxy = F8C9D03714F301AA005BE0B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F8202F9314D0C2DC00950BAF /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8202F9414D0C2DC00950BAF /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F8202F9514D0C2DC00950BAF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8202F9614D0C2DC00950BAF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F8202F9714D0C2DC00950BAF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8202F9814D0C2DC00950BAF /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8595FCF14C34BB100FD15BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F8595FD014C34BB100FD15BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F8595FD214C34BB100FD15BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Induction/Prefix.pch;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = Induction/Info.plist;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = Induction;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F8595FD314C34BB100FD15BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Induction/Prefix.pch;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = Induction/Info.plist;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = Induction;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8595FAD14C34BB100FD15BE /* Build configuration list for PBXProject "Induction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8595FCF14C34BB100FD15BE /* Debug */,
+				F8595FD014C34BB100FD15BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8595FD114C34BB100FD15BE /* Build configuration list for PBXNativeTarget "Induction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8595FD214C34BB100FD15BE /* Debug */,
+				F8595FD314C34BB100FD15BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8595FAA14C34BB100FD15BE /* Project object */;
+}

@@ -1,0 +1,30 @@
+/* line 1, ../sass/screen.sass */
+body {
+  font-family: "Helvetica", sans-serif;
+}
+
+/* line 4, ../sass/screen.sass */
+.axis {
+  fill: none;
+}
+/* line 7, ../sass/screen.sass */
+.axis line {
+  fill: none;
+  stroke: #cccccc;
+  shape-rendering: crispEdges;
+}
+/* line 12, ../sass/screen.sass */
+.axis line.tick {
+  stroke: #eeeeee;
+}
+/* line 15, ../sass/screen.sass */
+.axis text {
+  font-size: 0.75em;
+  fill: #777777;
+}
+
+/* line 19, ../sass/screen.sass */
+path {
+  fill: none;
+  stroke-width: 2;
+}
