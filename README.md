@@ -1,6 +1,7 @@
 # Induction
 **A Polyglot Database Client for Mac OS X**
 
+*Induction is still in its early alpha stage of development, and has a long way to go before it's production-ready. A development roadmap will be formalized soon, and made available in the GitHub project wiki. This will define the feature set for a 1.0 release, and serve to carve up the work across contributors.*
 
 ### Explore, Query, Visualize
 
@@ -13,10 +14,6 @@ Data is just data, after all. Induction supports PostgreSQL, MySQL, SQLite, Redi
 ### Free As In "Free to Kick Ass"
 
 The full source code for Induction [is available on GitHub](https://github.com/Induction/Induction). I'm excited to build something insanely great, and I invite you to join me on this codeventure. Bug reports, feature requests, patches, well-wishes, and rap demo tapes are always welcome.
-
-### The Long And Winding Roadmap
-
-Induction is in its early alpha stage of development, and has a long way to go before it's production-ready. A development roadmap will be formalized soon, and made available in the GitHub project wiki. This will define the feature set for a 1.0 release, and serve to carve up the work across contributors.
 
 ### What's In A Name?
 
